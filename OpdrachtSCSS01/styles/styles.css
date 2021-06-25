@@ -1,0 +1,272 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,500,700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #c3cfe2;
+}
+
+.card {
+  box-shadow: 5px 10px 15px -9 px grey;
+  background-color: #c3cfe2;
+  height: 680px;
+  width: 420px;
+  margin: 20px;
+  padding-bottom: 20px;
+}
+.card .box {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #c3cfe2;
+  margin-bottom: 20px;
+  line-height: 40px;
+  padding: 20px;
+  text-align: left;
+  font-size: 1.35em;
+  color: #726969;
+  font-weight: 549;
+  border-radius: 20px;
+  height: 600px;
+}
+.card .pic {
+  width: 130px;
+  height: 135px;
+  border: solid white 4px;
+  border-radius: 90%;
+  position: absolute;
+  top: 325px;
+  left: 160px;
+}
+
+.boxtext {
+  background-color: white;
+  padding: 20px 20px 0px 40px;
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: -2px 4px 5px 5px #dbd3d3;
+}
+
+footer {
+  text-align: center;
+  padding-top: 0px;
+  background-color: #686de0;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: -2px 4px 5px 5px #b9b4b4;
+}
+footer h3 {
+  background-color: #686de0;
+  color: white;
+  transform: translateY(60px);
+}
+footer p {
+  background-color: #686de0;
+  color: #becbd6;
+  transform: translateY(60px);
+}
+
+.portfolio {
+  width: 100%;
+  display: grid;
+  margin: 20px;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  background-color: #c3cfe2;
+  margin-top: 60px;
+}
+.portfolio .im {
+  width: 90%;
+  position: relative;
+  border: solid 1px black;
+}
+.portfolio .ima {
+  display: block;
+  width: 100%;
+}
+.portfolio .btt {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  visibility: none;
+  background: #c3cfe2;
+  opacity: 0;
+  transition-duration: 800ms;
+}
+
+.im :hover.btt {
+  opacity: 1;
+}
+
+.button {
+  height: 10%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(170px, 140px);
+  border-radius: 5px;
+}
+
+@media (min-width: 600px) {
+  .portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.smediabox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 300px;
+}
+.smediabox div {
+  justify-content: center;
+  width: 65px;
+  height: 50px;
+  transition: width 800ms;
+  color: white;
+}
+.smediabox .blog {
+  background-color: #e17b77;
+  display: inline-flexbox;
+}
+.smediabox .blog a {
+  background-color: #e17b77;
+  color: white;
+  position: absolute;
+  transform: translateY(-20px);
+  margin-left: 65px;
+  color: white;
+  font-size: 0.8em;
+}
+.smediabox .ablog {
+  background-color: #e17b77;
+}
+.smediabox .ablog::before {
+  content: ;
+}
+.smediabox .fa-laptop-code {
+  color: white;
+  background-color: #e17b77;
+  font-size: 1.4em;
+  margin-top: 14px;
+  margin-left: 17px;
+}
+.smediabox .twitter {
+  background-color: #00aced;
+  display: inline-flexbox;
+}
+.smediabox .twitter a {
+  background-color: #00aced;
+  color: white;
+  position: absolute;
+  transform: translateY(-20px);
+  margin-left: 65px;
+  color: white;
+  font-size: 0.8em;
+}
+.smediabox .fa-twitter {
+  color: white;
+  background-color: #00aced;
+  font-size: 1.4em;
+  margin-top: 14px;
+  margin-left: 20px;
+}
+.smediabox .atwit {
+  background-color: #00aced;
+}
+.smediabox .atwit::before {
+  content: ;
+}
+.smediabox .linkedin {
+  background-color: #007bb6;
+  display: inline-flexbox;
+}
+.smediabox .linkedin a {
+  background-color: #007bb6;
+  color: white;
+  position: absolute;
+  transform: translateY(-20px);
+  margin-left: 65px;
+  color: white;
+  font-size: 0.8em;
+}
+.smediabox .fa-linkedin-in {
+  color: white;
+  background-color: #007bb6;
+  font-size: 1.4em;
+  margin-top: 14px;
+  margin-left: 20px;
+}
+.smediabox .alink {
+  background-color: #007bb6;
+}
+.smediabox .alink::before {
+  content: ;
+}
+.smediabox .facebook {
+  background-color: #3b5998;
+  display: inline-flexbox;
+}
+.smediabox .facebook a {
+  background-color: #3b5998;
+  color: white;
+  position: absolute;
+  transform: translateY(-20px);
+  margin-left: 65px;
+  color: white;
+  font-size: 0.8em;
+}
+.smediabox .fa-facebook-f {
+  color: white;
+  background-color: #3b5998;
+  font-size: 1.4em;
+  margin-top: 14px;
+  margin-left: 20px;
+}
+.smediabox .facebo {
+  background-color: #3b5998;
+}
+.smediabox .facebo::before {
+  content: ;
+}
+.smediabox .github {
+  background-color: #333;
+  display: inline-flexbox;
+}
+.smediabox .github a {
+  background-color: #333;
+  color: white;
+  position: absolute;
+  transform: translateY(-20px);
+  margin-left: 65px;
+  color: white;
+  font-size: 0.8em;
+}
+.smediabox .fa-github {
+  color: white;
+  background-color: #333;
+  font-size: 1.4em;
+  margin-top: 14px;
+  margin-left: 20px;
+}
+.smediabox .gith {
+  background-color: #333;
+}
+.smediabox .gith::before {
+  content: ;
+}
+.smediabox div:hover {
+  width: 200px;
+}/*# sourceMappingURL=styles.css.map */
